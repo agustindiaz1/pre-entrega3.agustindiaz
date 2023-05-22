@@ -1,0 +1,178 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+/* banner */
+.cabecera {
+  width: 100%;
+  background-image: url(../image/banner.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  padding: 20px 0;
+}
+
+.navbar ul li {
+  display: inline-block;
+  bottom: 10px;
+  margin-left: 10px;
+
+}
+
+img {
+  max-width: 100%;
+}
+
+
+
+/* main de productos */
+.productooos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  background-image: url(../image/fondooo.jpg);
+}
+
+.item {
+  border-radius: 10px;
+}
+
+.item:hover {
+  box-shadow: 0px 10px 20px black
+}
+
+.info-producto {
+  padding: 15px 30px;
+  line-height: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+}
+
+.precio {
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.item:hover img {
+  transform: scale(1.2);
+}
+
+.item img {
+  width: 90%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.item figure {
+  overflow: hidden;
+}
+
+.info-producto button {
+  border: none;
+  background: none;
+  background-color: black;
+  color: white;
+  padding: 15px 10px;
+  cursor: pointer;
+}
+
+
+/* footer, redes y contacto */
+footer {
+  padding: 30px;
+  background-color: rgb(78, 77, 77);
+
+}
+
+
+.redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.contact {
+  margin-bottom: 70px;
+}
+
+.contact h2 {
+  text-align: center;
+}
+
+.contact-container {
+  width: 300px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.4);
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.contact-container div {
+  margin-bottom: 15px;
+}
+
+.contact-container label {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.contact-container input {
+  width: 100%;
+  border-radius: 10px;
+  padding: 15px 0 15px 15px;
+}
+
+.contact-container .enviar {
+  background-color: cornflowerblue;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+}
+
+
+@media (max-width: 1020px) {
+  .productooos{
+    display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  background-image: url(../image/fondooo.jpg);
+  }
+  
+}
+
+@media (max-width: 768px) {
+  .productooos, footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../image/fondooo.jpg);
+    
+  }
+  
+}
+@media (max-width: 370px){
+  .productooos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../image/fondooo.jpg);
+    margin: 0 auto;
+    padding: 0 auto;
+  }
+  
+  
+}
+
+
