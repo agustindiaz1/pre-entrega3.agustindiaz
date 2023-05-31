@@ -7,29 +7,6 @@
 
 
 
-/* banner */
-.cabecera {
-  width: 100%;
-  background-image: url(../image/banner.png);
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  padding: 20px 0;
-}
-
-.navbar ul li {
-  display: inline-block;
-  bottom: 10px;
-  margin-left: 10px;
-
-}
-
-img {
-  max-width: 100%;
-}
-
-
-
 /* main de productos */
 .productooos {
   display: grid;
@@ -65,10 +42,11 @@ img {
 }
 
 .item img {
-  width: 90%;
+  width: 100%;
   height: 300px;
-  object-fit: cover;
+  object-fit:contain;
   border-radius: 10px 10px 0 0;
+  
 }
 
 .item figure {
@@ -92,14 +70,6 @@ footer {
 
 }
 
-
-.redes {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
-}
 
 .contact {
   margin-bottom: 70px;
@@ -139,7 +109,35 @@ footer {
   font-size: 20px;
 }
 
+/* redes */
+.buttons{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  
+}
+.buttons a{
+  text-decoration: none;
+  font-size: 40px;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  line-height: 60px;
+  background-color: #314652;
+  color: #f1f1f1;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+  transition: all .4s ease-in-out;
+}
+.buttons a:hover{
+  transform: scale(1.3);
+}
 
+
+
+
+/* media queries */
 @media (max-width: 1020px) {
   .productooos{
     display: grid;
@@ -168,9 +166,9 @@ footer {
     justify-content: center;
     align-items: center;
     background-image: url(../image/fondooo.jpg);
-    margin: 0 auto;
-    padding: 0 auto;
+    
   }
+  
   
   
 }
