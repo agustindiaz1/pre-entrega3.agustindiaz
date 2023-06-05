@@ -1,0 +1,37 @@
+.contact {
+    margin-bottom: 70px;
+  }
+  
+  .contact h2 {
+    text-align: center;
+  }
+  
+  .contact-container {
+    width: 300px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.4);
+    padding: 30px;
+    border-radius: 20px;
+  }
+  
+  .contact-container div {
+    margin-bottom: 15px;
+  }
+  
+  .contact-container label {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .contact-container input {
+    width: 100%;
+    border-radius: 10px;
+    padding: 15px 0 15px 15px;
+  }
+  
+  .contact-container .enviar {
+    background-color: cornflowerblue;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+  }
