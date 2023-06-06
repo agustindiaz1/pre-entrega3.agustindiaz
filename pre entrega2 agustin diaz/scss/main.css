@@ -1,0 +1,175 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.contact {
+  margin-bottom: 70px;
+}
+
+.contact h2 {
+  text-align: center;
+}
+
+.contact-container {
+  width: 300px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.4);
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.contact-container div {
+  margin-bottom: 15px;
+}
+
+.contact-container label {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.contact-container input {
+  width: 100%;
+  border-radius: 10px;
+  padding: 15px 0 15px 15px;
+}
+
+.contact-container .enviar {
+  background-color: cornflowerblue;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+}
+
+.navbar {
+  background-color: grey;
+}
+
+.productooos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  background-image: url(../image/fondooo.jpg);
+}
+
+.item {
+  border-radius: 10px;
+}
+
+.item:hover {
+  box-shadow: 0px 10px 20px black;
+}
+
+.info-producto {
+  padding: 15px 30px;
+  line-height: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.precio {
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.item:hover img {
+  transform: scale(1.2);
+}
+
+.item img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 10px 10px 0 0;
+}
+
+.item figure {
+  overflow: hidden;
+}
+
+.info-producto button {
+  border: none;
+  background: none;
+  background-color: black;
+  color: white;
+  padding: 15px 10px;
+  cursor: pointer;
+}
+
+.textoabout {
+  font-size: 20px;
+}
+
+@media (max-width: 1020px) {
+  .productooos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    background-image: url(../image/fondooo.jpg);
+  }
+}
+@media (max-width: 768px) {
+  .productooos, footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../image/fondooo.jpg);
+  }
+}
+@media (max-width: 370px) {
+  .productooos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../image/fondooo.jpg);
+  }
+}
+footer {
+  padding: 30px;
+  background-color: rgb(78, 77, 77);
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.buttons a {
+  text-decoration: none;
+  font-size: 40px;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  line-height: 60px;
+  background-color: #314652;
+  color: #f1f1f1;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgb(0, 0, 0);
+  transition: all 0.4s ease-in-out;
+}
+
+.buttons a:hover {
+  transform: scale(1.3);
+}
+
+.textonosotros {
+  font-size: medium;
+  color: black;
+  background-color: grey;
+  text-shadow: 5px;
+}
+
+.metodospago {
+  background-color: grey;
+}
+
+.envios {
+  background-color: grey;
+}/*# sourceMappingURL=main.css.map */
